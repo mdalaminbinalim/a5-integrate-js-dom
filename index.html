@@ -8,6 +8,17 @@
     <!-- Tailwind and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        basic: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +30,32 @@
     </style>
 </head>
 
-<body class="lexend">
-    <header>
-
+<body class="lexend w-11/12 md:w-10/12 mx-auto">
+    <header class="md:my-6 my-3">
+        <nav>
+            <div class="navbar md:flex md:flex-row flex-col">
+                <div class="navbar-start hidden md:block">
+                    <button class="bg-basic text-xl font-bold hover:bg-[#95d541] py-2 px-4 md:py-3 md:px-8 border-none rounded-xl">Blog</button>
+                </div>
+                <div class="navbar-center flex items-center gap-3">
+                    <img class="md:w-12 w-8" src="assets/logo.png" alt="">
+                    <h1 class="text-xl md:text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end md:flex items-center gap-2 hidden">
+                    <img src="assets/coin.png" alt="Coin">
+                    <h2 class="text-[rgba(17,17,17,0.7)] font-bold text-lg md:text-2xl">10000 BDT</h2>
+                </div>
+            </div>
+            <div class="flex justify-between md:hidden my-3">
+                <div class="navbar-start">
+                    <button class="bg-basic text-xl font-bold hover:bg-[#95d541] py-2 px-4 md:py-3 md:px-8 border-none rounded-xl">Blog</button>
+                </div>
+                <div class="navbar-end flex items-center gap-2 ">
+                    <img src="assets/coin.png" alt="Coin">
+                    <h2 class="text-[rgba(17,17,17,0.7)] font-bold text-lg md:text-2xl">10000 BDT</h2>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
