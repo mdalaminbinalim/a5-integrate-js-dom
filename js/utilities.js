@@ -5,7 +5,6 @@ function donateNow(inputAmount, totalDonated, donationSector) {
     const inputValueNumber = parseFloat(inputValue);
     const donationTitle = document.getElementById(donationSector);
     const historySection = document.getElementById('history-container');
-    const modalShow = document.getElementById('my_modal_1');
 
     if ((inputValue >= 0 || typeof inputValue === 'number') && (balance >= inputValueNumber)) {
         document.getElementById(inputAmount).value = '';
